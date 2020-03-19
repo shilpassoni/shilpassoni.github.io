@@ -12,10 +12,11 @@ ReactDOM.render(
 <Router history={createBrowserHistory()}>
     <Switch>
         <Route exact path='/' render={() => <Header><App /></Header>} />
-        <Route path='jokes' render={() => <Header><Jokes /></Header>} />
-        <Route path='jokestwo' render={() => <Header><JokesTwo /></Header>} />
+        <Route path='/jokes' render={() => <Header><Jokes /></Header>} />
+        <Route path='/jTwo' render={() => <Header><JokesTwo /></Header>} />
     </Switch>
-</Router>, 
+</Router>,
  document.getElementById('root')
 );
+
 

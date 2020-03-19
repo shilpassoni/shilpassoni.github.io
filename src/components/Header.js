@@ -13,7 +13,7 @@ const Header = ({ children }) => {
           <div>
             <h3 style={style}><a href='/'>Home</a></h3>
             <h3 style={style}><a href='/jokes'>Jokes</a></h3>
-            <h3 style={style}><a href='/jokestwo'>JokesTwo</a></h3>
+            <h3 style={style}><a href='/jTwo'>JokesTwo</a></h3>
           </div> 
           {children}
         </div>

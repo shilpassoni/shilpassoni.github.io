@@ -33,6 +33,7 @@ class Jokes extends Component {
                 {this.state.jokes.map(joke => (<Joke key={joke.id} joke={joke}/>))}                
             </div>
         )
+    
     }
 }
 

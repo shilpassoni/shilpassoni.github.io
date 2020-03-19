@@ -12,12 +12,14 @@ class Jokes extends Component {
         fetch('https://official-joke-api.appspot.com/random_joke')
          .then(response => response.json())
          .then(json => this.setState({ joke: json }));
+         console.log('Mount');
     }
 
     fetchJokes = () => {
         fetch('https://official-joke-api.appspot.com/random_ten')
          .then(response => response.json())
          .then(json => this.setState({ jokes: json }));
+         console.log('jokes fetched');
     }
 
     render() {
@@ -33,6 +35,7 @@ class Jokes extends Component {
                 {this.state.jokes.map(joke => (<Joke key={joke.id} joke={joke}/>))}                
             </div>
         )
+    
     }
 }
 

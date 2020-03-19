@@ -29806,7 +29806,7 @@ var Header = function Header(_ref) {
   }, "Jokes")), _react.default.createElement("h3", {
     style: style
   }, _react.default.createElement("a", {
-    href: "/jokestwo"
+    href: "/jTwo"
   }, "JokesTwo"))), children);
 };
 
@@ -29890,6 +29890,7 @@ var Jokes = /*#__PURE__*/function (_Component) {
           jokes: json
         });
       });
+      console.log('jokes fetched');
     });
 
     return _this;
@@ -29907,6 +29908,7 @@ var Jokes = /*#__PURE__*/function (_Component) {
           joke: json
         });
       });
+      console.log('Mount');
     }
   }, {
     key: "render",
@@ -30161,7 +30163,7 @@ _reactDom.default.render(_react.default.createElement(_reactRouterDom.Router, {
     return _react.default.createElement(_Header.default, null, _react.default.createElement(_Jokes.default, null));
   }
 }), _react.default.createElement(_reactRouterDom.Route, {
-  path: "/jokestwo",
+  path: "/jTwo",
   render: function render() {
     return _react.default.createElement(_Header.default, null, _react.default.createElement(_JokesTwo.default, null));
   }
@@ -30194,7 +30196,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64061" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49462" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
